@@ -1,6 +1,7 @@
 package com.Avengers.sql_rocks.Entities;
 
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -8,14 +9,34 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "user_info")
 public class User {
+
     @Id
+    @Column(unique = true)
     private int id;
     private String name;
     private String mobNo;
+    @Column(unique = true)
+    private String email;
     private String state;
 
     public String getState() {
         return state;
+    }
+
+    public User(int id, String name, String mobNo, String email, String state) {
+        this.id = id;
+        this.name = name;
+        this.mobNo = mobNo;
+        this.email = email;
+        this.state = state;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public void setState(String state) {
@@ -25,13 +46,6 @@ public class User {
 
     public User(){
 
-    }
-
-    public User(int id, String name, String mobNo,String state) {
-        this.id = id;
-        this.name = name;
-        this.mobNo = mobNo;
-        this.state=state;
     }
 
     public int getId() {
