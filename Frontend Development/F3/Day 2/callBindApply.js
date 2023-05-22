@@ -20,7 +20,7 @@
 // const arg=[22,"Software Engineer"]
 // console.log(sayHello.apply(user,arg));
 
-// apply()
+// bind()
 
 // function sayHello(profession) {
 //     return `Hello my name is ${this.name} and I'm a ${profession}.`
