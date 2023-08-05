@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux/es/hooks/useSelector'
 const SongInfo = () => {
-    const song = useSelector(state => state)
+    const song = useSelector(state => state.selectedSong)
     console.log(song);
     return (
         <div>
