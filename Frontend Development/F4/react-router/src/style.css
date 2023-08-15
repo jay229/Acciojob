@@ -1,0 +1,60 @@
+/* .nav-bar{
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+
+}
+.nav-bar a{
+    text-decoration: none;
+    color: white;
+}
+.active{
+    border: 1px solid hotpink;
+    
+} */
+
+
+
+.navbar{
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.navbar .active{
+    color: tomato;
+    border: 1px solid greenyellow;
+}
+.products{
+    background-color: blueviolet;
+    width: 300px;
+}
+
+.products img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.products h3, p{
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+    padding: 10px;
+}
+
+
+.apple{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
